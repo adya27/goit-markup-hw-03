@@ -148,8 +148,8 @@ section .contact_list {
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-image: url('../images/Headerimg.jpg'),
-    url('../images/imgoverlay.jpg');
+  background-image: url('../images/imgoverlay.png'),
+    url('../images/Headerimg.jpg');
   background-color: var(--primary-text-color);
 }
 
@@ -187,14 +187,12 @@ section .contact_list {
   border-color: var(--accent-color);
   border-style: solid;
 }
-/* our adventages */
-/* hidden from navigation */
+/* our advantages */
+/* "hidden" from navigation */
 
-.advantages-section {
-  padding: 94px 198px;
-}
-
-.adventages {
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
   padding-top: 94px;
   padding-bottom: 94px;
@@ -203,14 +201,14 @@ section .contact_list {
   border-bottom: 1px solid #ececec;
 }
 
-.adventages li {
-  display: inline-block;
+.advantages li {
+  display: block;
 }
 
-.adventages li:not(:last-child) {
+.advantages li:not(:last-child) {
   margin-right: 25px;
 }
-.adventages img {
+.advantages img {
   max-width: 270px;
   max-height: 120px;
   background-color: #f5f4fa;
@@ -218,11 +216,11 @@ section .contact_list {
   border-radius: 4px;
   border-color: var(--accent-color);
 }
-.adventages img:hover,
-.adventages img:focus {
+.advantages img:hover,
+.advantages img:focus {
   background-color: var(--accent-color);
 }
-.adventages h3 {
+.advantages h3 {
   margin-top: 30px;
   margin-bottom: 10px;
 
@@ -233,12 +231,12 @@ section .contact_list {
 
   color: var(--title-text-color);
 }
-.adventages h3:hover,
-.adventages h3:focus {
+.advantages h3:hover,
+.advantages h3:focus {
   color: var(--accent-color);
 }
 
-.adventages p {
+.advantages p {
   margin: 0;
 
   line-height: 1.7;
@@ -249,13 +247,13 @@ section .contact_list {
   width: 270px;
   height: 75px;
 }
-.adventages p:hover,
-.adventages p:focus {
+.advantages p:hover,
+.advantages p:focus {
   color: var(--accent-color);
 }
 /* what we are doing */
 
-.doing-section {
+.doing_section {
   padding: 94px 0;
 }
 
@@ -279,8 +277,11 @@ section .contact_list {
 .doing_list li:not(:last-child) {
   margin-right: 30px;
 }
-.doing-section h3 {
+.doing_section h3 {
   display: block;
+
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
 
   position: relative;
   z-index: 1;
@@ -297,12 +298,12 @@ section .contact_list {
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
 }
-.doing-section h3:hover,
-.doing-section h3:focus {
+.doing_section h3:hover,
+.doing_section h3:focus {
   background-color: var(--accent-color);
 }
 
-.doing-section img {
+.doing_section img {
   margin-bottom: -72px;
 }
 
@@ -527,6 +528,11 @@ footer .logo {
   border-width: 1px;
   border-color: var(--primary-white-color);
   border-style: solid;
+}
+
+.send_button {
+  display: flex;
+  align-items: baseline;
 }
 .copyright {
   padding-top: 18px;
