@@ -17,34 +17,38 @@
 
   <body>
     <header>
-      <nav>
-        <a href="./index.html" class="logo"
-          ><span class="accent">Web</span> Studio</a
-        >
-        <ul class="list">
-          <li class="item"><a href="./index.html">Студия</a></li>
-          <li class="item">
-            <a class="item_active" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="item"><a href="">Контакты</a></li>
-        </ul>
-      </nav>
-      <section>
-        <!-- потом сделать невидимым -->
-        <h2 class="hidden">Свяжитесь с нами</h2>
-        <ul class="contact_list">
-          <li>
-            <a href="mailto:info@devstudio.com">
-              <img src="./images/mail.svg" alt="почта" /> info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:0961111111">
-              <img src="./images/tel.svg" alt="телефон" /> +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <nav>
+          <a href="./index.html" class="logo"
+            ><span class="accent">Web</span> Studio</a
+          >
+          <ul class="list">
+            <li class="item"><a href="./index.html">Студия</a></li>
+            <li class="item">
+              <a class="item_active" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="item"><a href="">Контакты</a></li>
+          </ul>
+        </nav>
+        <section>
+          <!-- потом сделать невидимым -->
+          <h2 class="hidden">Свяжитесь с нами</h2>
+          <ul class="contact_list">
+            <li>
+              <a href="mailto:info@devstudio.com">
+                <img src="./images/mail.svg" alt="почта" />
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact_list_first">
+              <a href="tel:0961111111">
+                <img src="./images/tel.svg" alt="телефон" /> +38 096 111 11
+                11</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
     </header>
     <main>
       <section>
@@ -72,7 +76,7 @@
             <button type="button" class="filter_button">Дизайн</button>
           </li>
         </ul>
-        <section class="works">
+        <section class="container portfolio">
           <h2 class="hidden">Портфолио</h2>
           <ul class="works_list">
             <li>
@@ -276,8 +280,9 @@
       </section>
     </main>
     <!-- Our footer -->
+
     <footer class="footer">
-      <div class="horiz-footer">
+      <div class="container">
         <!-- our adress -->
         <div class="adress">
           <a href="./index.html" class="logo"
@@ -316,8 +321,10 @@
         <!-- Sign up! -->
         <div class="subscribe">
           <p class="subscribe_title">Подпишитесь на рассылку</p>
-          <a class="e-mail_button" href="">E-mail</a>
-          <a class="hero_button" href="">Подписаться</a>
+          <div class="subscribe_buttons">
+            <a class="e-mail_button" href="">E-mail</a>
+            <a class="hero_button" href="">Подписаться</a>
+          </div>
         </div>
       </div>
       <p class="copyright">
