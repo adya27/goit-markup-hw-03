@@ -17,6 +17,7 @@ html {
 
 a {
   text-decoration: none;
+  /* display: block; */
 }
 li {
   list-style: none;
@@ -41,7 +42,7 @@ header {
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1230px;
+  max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -210,7 +211,7 @@ section .contact_list {
   margin-right: 25px;
 }
 .adventages img {
-  max-width: 278px;
+  max-width: 270px;
   max-height: 120px;
   background-color: #f5f4fa;
   padding: 25px 104px;
@@ -245,7 +246,7 @@ section .contact_list {
 
   color: var(--primary-text-color);
 
-  width: 278px;
+  width: 270px;
   height: 75px;
 }
 .adventages p:hover,
@@ -285,7 +286,7 @@ section .contact_list {
   z-index: 1;
 
   margin: 0;
-  width: 380px;
+  width: 370px;
   height: 70px;
   padding-top: 25px;
 
@@ -329,7 +330,8 @@ section .contact_list {
   border-radius: 4px;
 }
 .team-section h3 {
-  margin: 30px 0 10px;
+  padding: 30px 0 10px;
+  margin: 0;
 
   font-size: 16px;
   font-weight: 500;
@@ -339,7 +341,8 @@ section .contact_list {
   color: var(--title-text-color);
 }
 .team-section p {
-  margin: 0 0 16px;
+  margin: 0;
+  padding: 0 0 16px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
@@ -391,7 +394,7 @@ section .contact_list {
 }
 
 .clients-section .container {
-  width: 1230px;
+  width: 1200px;
   justify-content: space-between;
 }
 
@@ -412,7 +415,7 @@ section .contact_list {
 
 .clients-section a {
   /* display: block; */
-  width: 175px;
+  width: 170px;
   height: 90px;
 }
 
@@ -573,7 +576,8 @@ footer .logo {
 
 .works_list h3 {
   /* width: 380px; */
-  margin: 20px 0 4px 24px;
+  padding: 20px 0 4px 24px;
+  margin: 0;
 
   color: var(--title-text-color);
 
@@ -583,7 +587,9 @@ footer .logo {
 }
 
 .works_list p {
-  margin: 0 0 20px 24px;
+  padding: 0 0 20px 24px;
+  margin: 0;
+
   /* width: 380px; */
 
   color: var(--primary-text-color);
