@@ -143,6 +143,10 @@ section .contact_list {
 
   padding-top: 200px;
   padding-bottom: 200px;
+
+  background-image: url('../images/Headerimg.jpg'),
+    url('../images/imgoverlay.jpg');
+  background-color: var(--primary-text-color);
 }
 
 .hero-title {
@@ -188,6 +192,8 @@ section .contact_list {
 
 .adventages {
   padding-left: 0;
+  padding-top: 94px;
+  margin: 0;
 }
 
 .adventages li {
@@ -593,6 +599,7 @@ footer .logo {
 }
 
 .works_list {
+  margin: 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
