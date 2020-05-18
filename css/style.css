@@ -339,16 +339,22 @@ section .contact_list {
 .social_list li {
   display: inline;
 }
+
 .social_list img {
   padding: 10px;
 }
 .social_list li:not(:last-child) {
   margin: 0 10px 0 0;
 }
+
 .social_list img:hover,
 .social_list img:focus {
   border-radius: 50%;
   background-color: var(--accent-color);
+}
+
+.container .card {
+  padding-bottom: 24px;
 }
 
 /* our clients */
