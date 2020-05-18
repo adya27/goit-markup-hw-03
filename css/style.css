@@ -193,7 +193,10 @@ section .contact_list {
 .adventages {
   padding-left: 0;
   padding-top: 94px;
+  padding-bottom: 94px;
   margin: 0;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .adventages li {
