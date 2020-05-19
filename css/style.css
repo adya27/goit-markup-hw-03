@@ -38,6 +38,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   margin: 0;
   margin-left: auto;
@@ -95,16 +96,19 @@ section .contact_list {
   letter-spacing: 0.02em;
 
   color: var(--title-text-color);
+
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
 }
+
 .list :not(:last-child) {
   margin-right: 50px;
-  height: 80px;
 }
 
 .list a:hover,
 .list a:focus {
   color: var(--accent-color);
-  border-bottom: 2px solid var(--accent-color);
+  border-bottom: 4px solid var(--accent-color);
 }
 .hidden {
   display: none;
@@ -203,6 +207,10 @@ section .contact_list {
   margin: 0;
 
   border-bottom: 1px solid #ececec;
+}
+
+.advantages a {
+  display: block;
 }
 
 .advantages li {
