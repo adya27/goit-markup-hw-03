@@ -19,6 +19,18 @@ a {
   text-decoration: none;
   /* display: block; */
 }
+
+a #svg {
+  fill: var(--primary-text-color);
+}
+
+.contact_list a:hover #svg {
+  fill: var(--accent-color);
+}
+.contact_list a svg {
+  margin-right: 10px;
+}
+
 li {
   list-style: none;
 }
@@ -28,6 +40,11 @@ body {
   font-weight: 400;
   line-height: 1.14;
   letter-spacing: 0.03em;
+
+  /* Keep the Footer at the Bottom*/
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /* header */
 header {
@@ -437,6 +454,9 @@ footer {
   background-color: #2f303a;
   padding-bottom: 20px;
   padding-top: 48px;
+
+  /* Keep the Footer at the Bottom */
+  margin-top: auto;
 }
 .footer .container {
   align-items: baseline;
