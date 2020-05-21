@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --primary-logo-color: #afb1b8;
 }
 
 html {
@@ -432,21 +433,24 @@ section .contact_list {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 170px;
+  height: 90px;
 
-  border: solid 2px var(--primary-text-color);
+  border: solid 2px var(--primary-logo-color);
   border-radius: 4px;
 
   background-color: var(--primary-white-color);
 }
 .clients-section a:hover,
 .clients-section a:focus {
-  background-color: var(--accent-color);
+  border: solid 2px var(--accent-color);
 }
 
-.clients-section a {
-  /* display: block; */
-  width: 170px;
-  height: 90px;
+.clients-section a #svg {
+  fill: var(--primary-logo-color);
+}
+.clients-section a:hover #svg {
+  fill: var(--accent-color);
 }
 
 /* footer logo */
